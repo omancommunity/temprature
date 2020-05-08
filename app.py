@@ -80,6 +80,38 @@ year_four.to_csv('out/year_four_.csv')
 
 
 
+# year one high/low temprature
+print('maxmium temp in year one: {}'.format(year_one['temp_dry_in_c'].max()))
+print('minimum temp in year one: {}'.format(year_one['temp_dry_in_c'].min()))
+
+
+# year two high/low temprature
+print('maxmium temp in year two: {}'.format(year_two['temp_dry_in_c'].max()))
+print('minimum temp in year two: {}'.format(year_two['temp_dry_in_c'].min()))
+
+# year three high/low temprature
+print('maxmium temp in year three: {}'.format(year_three['temp_dry_in_c'].max()))
+print('minimum temp in year three: {}'.format(year_three['temp_dry_in_c'].min()))
+
+# year four high/low temprature
+print('maxmium temp in year four: {}'.format(year_four['temp_dry_in_c'].max()))
+print('minimum temp in year four: {}'.format(year_four['temp_dry_in_c'].min()))
+
+
+
+total_high_temp  = ((year_one['temp_dry_in_c'].max() + year_two['temp_dry_in_c'].max() + year_three['temp_dry_in_c'].max() + year_four['temp_dry_in_c'].max()) / 4)
+total_low_temp  = ((year_one['temp_dry_in_c'].min() + year_two['temp_dry_in_c'].min() + year_three['temp_dry_in_c'].min() + year_four['temp_dry_in_c'].min()) / 4)
+# year all year high/low temprature
+
+print('\n\n\n\n Please check result above if you \n '
+      'just grab max and min temp directly without \n '
+      'divide data directly above first two result ..\n')
+
+print('maxmium temp in all four year: {}'.format(total_high_temp))
+print('minimum temp in all four year: {}'.format(total_low_temp))
+
+
+
 # after split years now take reading of 24 time per day and then rewrite the sum result again
 
 # here you will jump every 24 row for learn only

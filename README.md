@@ -12,8 +12,21 @@ data making it useful and handy .
    * ```predict data``` temperature for next ```4 year``` ? 
 
 
+---
 
 
+To start create new juypter note or new virtual env by:
+
+```bash
+# make sure to install virtualenv before or conda which more  easier
+$ virtualenv venv
+# activate virtualenv
+$ source venv/bin/activate
+# install pnadas 
+$ pip3 install pandas
+# run script
+$ python3 app.py
+```
 
 
 
