@@ -58,15 +58,25 @@ __YEAR_ = [
     '2015']
 
 # for col in df.date_full_with_time:
-year_one_ = df[df['date_full_with_time'].str.contains(__YEAR_[0])]
-year_two_ = df[df['date_full_with_time'].str.contains(__YEAR_[1])]
-year_three_ = df[df['date_full_with_time'].str.contains(__YEAR_[2])]
-year_four_ = df[df['date_full_with_time'].str.contains(__YEAR_[3])]
 
-year_one_.to_csv('out/year_one_.csv' )
-year_two_.to_csv('out/year_two_.csv')
-year_three_.to_csv('out/year_three_.csv')
-year_four_.to_csv('out/year_four_.csv')
+# year one all date with 2011
+year_one = df[df['date_full_with_time'].str.contains(__YEAR_[0])]
+
+# year one all date with 2012
+year_two = df[df['date_full_with_time'].str.contains(__YEAR_[1])]
+
+# year one all date with 2013
+year_three = df[df['date_full_with_time'].str.contains(__YEAR_[2])]
+
+# year one all date with 2014
+year_four = df[df['date_full_with_time'].str.contains(__YEAR_[3])]
+
+
+# export data to new csv for each year
+year_one.to_csv('out/year_one_.csv' )
+year_two.to_csv('out/year_two_.csv')
+year_three.to_csv('out/year_three_.csv')
+year_four.to_csv('out/year_four_.csv')
 
 
 

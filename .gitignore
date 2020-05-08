@@ -1,2 +1,5 @@
 # Project exclude paths
 /python/
+/venv/*
+/venv/
+/env/
