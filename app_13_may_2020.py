@@ -1,6 +1,4 @@
 import pandas as pd
-import numpy as np
-import re
 import datetime
 
 # we are interested only in two col date/time and temperature
