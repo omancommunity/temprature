@@ -108,17 +108,24 @@ print('2014 Median temp :{0}'.format(
 )
 
 # Temperature for 4 years max/min
-print('{0} the median (normal) Temperature for 4 year \nand max :{1}, \nand min: {2}'.format(((df_2011['temp_dry_in_c'].median()+
-                                                               df_2012['temp_dry_in_c'].median()+
-                                                               df_2013['temp_dry_in_c'].median()+
-                                                               df_2014['temp_dry_in_c'].median())/4),
-                                                                         ((df_2011['temp_dry_in_c'].max() +
-                                                                           df_2012['temp_dry_in_c'].max() +
-                                                                           df_2013['temp_dry_in_c'].max() +
-                                                                           df_2014['temp_dry_in_c'].max()) / 4),
+print('{0} the median (normal) Temperature'
+      ' for 4 year \nand max :{1},'
+      ' \nand min: {2}'
+      .format(((df_2011['temp_dry_in_c'].median()+
+                df_2012['temp_dry_in_c'].median()+
+                df_2013['temp_dry_in_c'].median()+
+                df_2014['temp_dry_in_c'].median())/4),
+              (
+                      (df_2011['temp_dry_in_c'].max() +
+                       df_2012['temp_dry_in_c'].max() +
+                       df_2013['temp_dry_in_c'].max() +
+                       df_2014['temp_dry_in_c'].max()) / 4),
+              (
+                            (df_2011['temp_dry_in_c'].min() +
+                             df_2012['temp_dry_in_c'].min() +
+                             df_2013['temp_dry_in_c'].min() +
+                             df_2014['temp_dry_in_c'].min()) / 4)
+              )
+      )
 
-                                                                         ((df_2011['temp_dry_in_c'].min() +
-                                                                           df_2012['temp_dry_in_c'].min() +
-                                                                           df_2013['temp_dry_in_c'].min() +
-                                                                           df_2014['temp_dry_in_c'].min()) / 4)
-                                                                         ))
+# you can also use np.median(YOUR CALCULATION) FOR SIMPLICITY
