@@ -45,6 +45,8 @@ df_2012 = df.loc['01/01/2012 1:00':'31/12/2012 0:00']
 df_2013 = df.loc['01/01/2013 1:00':'31/12/2013 0:00']
 df_2014 = df.loc['01/01/2014 1:00':'31/12/2014 0:00']
 
+
+
 """
 2011
 """
@@ -126,3 +128,10 @@ print('{0} the median (normal) Temperature'
       )
 
 # you can also use np.median(YOUR CALCULATION) FOR SIMPLICITY
+
+
+# Extract data file to years
+df_2011.to_csv('out/year_one.csv')
+df_2012.to_csv('out/year_two.csv')
+df_2013.to_csv('out/year_three.csv')
+df_2014.to_csv('out/year_four.csv')

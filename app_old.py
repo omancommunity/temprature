@@ -73,7 +73,7 @@ year_four = df[df['date_full_with_time'].str.contains(__YEAR_[3])]
 
 
 # export data to new csv for each year
-year_one.to_csv('out/year_one_.csv' )
+year_one.to_csv('out/year_one_.csv' , index=0)
 year_two.to_csv('out/year_two_.csv')
 year_three.to_csv('out/year_three_.csv')
 year_four.to_csv('out/year_four_.csv')
