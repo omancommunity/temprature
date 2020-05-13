@@ -93,8 +93,7 @@ print('2013 Median temp :{0}'.format(
 """
 2014
 """
-# keep in mind high/low higher
-# temperature and low temperature and not median
+# keep in mind (higher temperature and low temperature)  not median
 print(
     '2014 High temp :{0} and 2014 Low temp :{1}'.format(
         df_2014['temp_dry_in_c'].max(),
