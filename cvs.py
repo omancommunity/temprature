@@ -35,13 +35,11 @@ def getMaxOfWholePeriod():
 
     result = np.where(temps == np.amax(temps))
 
-    listOfCordinates = list(zip(result[0], result[1]))
+ 
 
-    for cord in listOfCordinates:
+    print("And that in the date:",dates[result[0]])
 
-     print("And that in the date:",dates[result[0]])
-
-def getMinOfEachYear():
+def getTheHottestYear():
     temps, dates = get_cvs(PATH)
 
     year2011 = []
@@ -89,5 +87,5 @@ def getMinOfEachYear():
 
 
 getMaxOfWholePeriod()
-getMinOfEachYear()
+getTheHottestYear()
 #lsArray =  np.concatenate((temps,dates),axis=1)
