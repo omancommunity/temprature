@@ -15,8 +15,8 @@ def get_cvs(path=PATH):
 
      for i ,row in enumerate(readCSV):
 
-        if(row[1]!="dt64"):
-            #temps[i,0] = float(row[0][0:10])
+        
+    
             dt=datetime.strptime(row[0][0:10], '%d/%m/%Y')
             dt64 = np.datetime64(dt)
             dates[i,0] =dt64
